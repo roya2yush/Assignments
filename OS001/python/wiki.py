@@ -1,6 +1,7 @@
 import requests
 import json
 import sys
+import time
 
 url = "https://en.wikipedia.org/w/api.php?action=opensearch&namespace=0&limit=1&format=json&search="
 
@@ -27,6 +28,12 @@ print("\n")
 
 f = open("results.txt", "a")
 try:
+    print("###               (33%)\r", end = ' ')
+    time.sleep(0.5)
+    print("#########         (66%)\r", end = ' ')
+    time.sleep(0.2)
+    print("#############     (100%)\r")
+    print("\n")
     print(response.json()[3][0])
     f.write(response.json()[3][0]+"\n")
 except:
