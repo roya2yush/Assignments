@@ -1,0 +1,153 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: notes API
+  description: A simple API to add, modify view notes
+servers:
+  - url: localhost:5000
+paths:
+  /:
+    get:
+      description: Welcome page
+      responses:
+        '200':
+          description: Successful response
+  /new:
+    post:
+      description: Create new Note
+      content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  required:
+                    - user
+                    - password
+                    - noteName
+                    - noteDesc
+                  properties:
+                    user:
+                      type: string
+                    password:
+                      type: string
+                    noteName:
+                      type: string
+                    noteDesc:
+                      type: string
+      responses:
+        '200':
+          description: Successful response
+    /newAcc:
+      post:
+        description: Create new Account
+        content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                    type: object
+                    required:
+                      - user
+                      - password
+                    properties:
+                      user:
+                        type: string
+                      password:
+                        type: string
+        responses:
+          '200':
+            description: Successful response
+    /viewAll:
+      get:
+        description: View all noteNames
+        content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                    type: object
+                    required:
+                      - user
+                      - password
+                    properties:
+                      user:
+                        type: string
+                      password:
+                        type: string
+        responses:
+          '200':
+            description: Successful response
+      /view:
+        post:
+          description: View NoteDesc
+          content:
+                application/json:
+                  schema:
+                    type: array
+                    items:
+                      type: object
+                      required:
+                        - user
+                        - password
+                        - noteName
+                      properties:
+                        user:
+                          type: string
+                        password:
+                          type: string
+                        noteName:
+                          type: string
+          responses:
+            '200':
+              description: Successful response
+
+      /update:
+        put:
+          description: update existing note
+          content:
+                application/json:
+                  schema:
+                    type: array
+                    items:
+                      type: object
+                      required:
+                        - user
+                        - password
+                        - noteName
+                        - noteDesc
+                      properties:
+                        user:
+                          type: string
+                        password:
+                          type: string
+                        noteName:
+                          type: string
+                        noteDesc:
+                          type: string
+          responses:
+            '200':
+              description: Successful response
+      /delete:
+        delete:
+          description: Delete note
+          content:
+                application/json:
+                  schema:
+                    type: array
+                    items:
+                      type: object
+                      required:
+                        - user
+                        - password
+                        - noteName
+                      properties:
+                        user:
+                          type: string
+                        password:
+                          type: string
+                        noteName:
+                          type: string
+          responses:
+            '200':
+              description: Successful response
