@@ -1,0 +1,18 @@
+com/example/DependencyInjection/EmailServiceInjector.java
+ com.example.DependencyInjection.EmailServiceInjector
+com/example/DependencyInjection/EmailServiceImpl.java
+ com.example.DependencyInjection.EmailServiceImpl
+com/example/DependencyInjection/MyDIApplication.java
+ com.example.DependencyInjection.MyDIApplication
+com/example/DependencyInjection/MessageServiceInjector.java
+ com.example.DependencyInjection.MessageServiceInjector
+com/example/DependencyInjection/MyApplicationConfig.java
+ com.example.DependencyInjection.MyApplicationConfig
+com/example/DependencyInjection/MessageDITest.java
+ com.example.DependencyInjection.MessageDITest
+com/example/DependencyInjection/MessageService.java
+ com.example.DependencyInjection.MessageService
+com/example/DependencyInjection/MyDbConfig.java
+ com.example.DependencyInjection.MyDbConfig
+com/example/DependencyInjection/Consumer.java
+ com.example.DependencyInjection.Consumer
