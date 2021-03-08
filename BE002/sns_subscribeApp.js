@@ -8,7 +8,7 @@ AWS.config.update({region: region});
 var params = {
   Protocol: http, /* required */
   TopicArn: topicArn, /* required */
-  Endpoint: 'http://localhost/' //configure this
+  Endpoint: 'http://localhost/index.js/' //configure this
 };
 
 // Create promise and SNS service object
