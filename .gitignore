@@ -1,1 +1,5 @@
 WD001/db.yaml
+BE002/node_modules
+BE002/.aws/credentials
+BE002/package-lock.json
+BE002/package.json

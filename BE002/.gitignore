@@ -1,0 +1,4 @@
+node_modules
+.aws/credentials
+package-lock.json
+package.json
